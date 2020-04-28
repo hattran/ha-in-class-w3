@@ -352,6 +352,17 @@ textarea {
 /* =============
     Footer
 ============= */
+#footer {
+  display: grid;
+  grid-template-columns: 6% auto 6%;
+  grid-template-areas: ". footer ."; }
+  #footer #footer-content {
+    grid-area: footer; }
+  @media (min-width: 768px) {
+    #footer {
+      display: grid;
+      grid-template-columns: 20% auto 20%;
+      grid-template-areas: ". footer."; } }
 /* =============
     Section 1
 ============= */
