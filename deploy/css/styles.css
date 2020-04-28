@@ -322,6 +322,16 @@ ul {
   ul li {
     list-style: none; }
 
+.show-for-md {
+  display: none; }
+  @media (min-width: 768px) {
+    .show-for-md {
+      display: block; } }
+.show-for-lg {
+  display: none; }
+  @media (min-width: 992px) {
+    .show-for-lg {
+      display: block; } }
 /* =============
     Typography
 ============= */
@@ -376,6 +386,10 @@ textarea {
   display: grid;
   grid-template-columns: 15px auto 15px;
   grid-template-areas: ". section-2 ."; }
+  @media (min-width: 1200px) {
+    #section-2 {
+      display: grid;
+      grid-template-columns: auto 800px auto; } }
   #section-2 #section-2-content {
     grid-area: section-2; }
     @media (min-width: 768px) {
@@ -388,6 +402,25 @@ textarea {
       #section-2 #section-2-content #section-2-bottom {
         display: grid;
         grid-template-columns: 10% auto 10%;
+        grid-template-areas: ". section-2-bottom ."; }
+        #section-2 #section-2-content #section-2-bottom #section-2-bottom-content {
+          grid-area: section-2-bottom; } }
+    @media (min-width: 992px) {
+      #section-2 #section-2-content #section-2-top {
+        display: grid;
+        grid-template-columns: 20% auto 20%;
+        grid-template-areas: ". section-2-top ."; }
+        #section-2 #section-2-content #section-2-top #section-2-top-content {
+          grid-area: section-2-top; }
+      #section-2 #section-2-content #section-2-middle {
+        display: grid;
+        grid-template-columns: 20% auto 20%;
+        grid-template-areas: ". section-2-middle ."; }
+        #section-2 #section-2-content #section-2-middle #section-2-middle-content {
+          grid-area: section-2-middle; }
+      #section-2 #section-2-content #section-2-bottom {
+        display: grid;
+        grid-template-columns: 25% auto 25%;
         grid-template-areas: ". section-2-bottom ."; }
         #section-2 #section-2-content #section-2-bottom #section-2-bottom-content {
           grid-area: section-2-bottom; } }
@@ -410,6 +443,21 @@ textarea {
         grid-template-areas: ". section-3-content ."; }
         #section-3 #section-3-container #section-3-content #section-3-content-text {
           grid-area: section-3-content; } }
+@media (min-width: 992px) {
+  #section-3 {
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-template-areas: "section-3-aside section-3-content"; }
+    #section-3 #section-3-photo {
+      grid-area: section-3-aside; }
+    #section-3 #section-3-container {
+      grid-area: section-3-content; } }
+
+@media (min-width: 1200px) {
+  #section-3 {
+    display: grid;
+    grid-template-columns: auto 1200px auto; } }
+
 /* =============
     Section 4
 ============= */
@@ -429,3 +477,53 @@ textarea {
     gap: 20px; }
     #section-5 ul li img {
       width: 100%; }
+    @media (min-width: 768px) {
+      #section-5 ul {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "g1 g3" "g1 g7" "g5 g6"; } }
+    @media (min-width: 768px) {
+      #section-5 ul #g1 {
+        grid-area: g1; } }
+    @media (min-width: 768px) {
+      #section-5 ul #g2 {
+        grid-area: g2; } }
+    @media (min-width: 768px) {
+      #section-5 ul #g3 {
+        grid-area: g3; } }
+    @media (min-width: 768px) {
+      #section-5 ul #g4 {
+        grid-area: g4; } }
+    @media (min-width: 768px) {
+      #section-5 ul #g5 {
+        grid-area: g5; } }
+    @media (min-width: 768px) {
+      #section-5 ul #g6 {
+        grid-area: g6; } }
+    @media (min-width: 768px) {
+      #section-5 ul #g7 {
+        grid-area: g7; } }
+    @media (min-width: 992px) {
+      #section-5 ul {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "g1 g2 g3" "g1 g7 g4" "g6 g5 g4"; } }
+    @media (min-width: 992px) {
+      #section-5 ul #g1 {
+        grid-area: g1; } }
+    @media (min-width: 992px) {
+      #section-5 ul #g2 {
+        grid-area: g2; } }
+    @media (min-width: 992px) {
+      #section-5 ul #g3 {
+        grid-area: g3; } }
+    @media (min-width: 992px) {
+      #section-5 ul #g4 {
+        grid-area: g4; } }
+    @media (min-width: 992px) {
+      #section-5 ul #g5 {
+        grid-area: g5; } }
+    @media (min-width: 992px) {
+      #section-5 ul #g6 {
+        grid-area: g6; } }
+    @media (min-width: 992px) {
+      #section-5 ul #g7 {
+        grid-area: g7; } }

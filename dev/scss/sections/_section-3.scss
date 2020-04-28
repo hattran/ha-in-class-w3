@@ -25,9 +25,27 @@
             #section-3-content-text{
                 grid-area: section-3-content;
             }
-
        }
        }
 
+    }
+
+    @include lg{
+        display: grid;
+        grid-template-columns: 40% auto;
+        grid-template-areas: "section-3-aside section-3-content";
+
+        #section-3-photo{
+            grid-area: section-3-aside;
+        }
+
+        #section-3-container{
+            grid-area: section-3-content;
+        }
+    }
+
+    @include xl{
+        display:grid;
+        grid-template-columns: auto 1200px auto;
     }
 }
